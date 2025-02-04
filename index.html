@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Timer</title>
+        <link rel="stylesheet" href="index.css" type="text/css">
+    </head>
+
+    <body>
+        <h1>Pomodoro Method Timer</h1>
+        
+        <!-- Clock  -->
+        <div>
+            <div id="clock"><span id="workOrBreak"><h2>Work Time!</h2></span>
+                <div class="timerCircle">
+                    <span id="time">25:00</span>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!-- Timer Options  -->
+        <div id="buttons">
+            <button id="start" type="button" onclick="startTimer()">Start</button>
+            <div class="divider"> </div>
+
+            <button id="pause" style="display: none;" type="button">Pause</button>
+            <div class="divider"> </div>
+
+            <button id="reset" disabled="true" type="button">Reset</button>
+            <div class="divider"> </div>
+
+            <button id="edit" type="button" onclick="chooseTime()">Edit Time</button>
+            <div class="divider"> </div>
+        </div>
+
+        <!-- About  -->
+        <br>
+        <a href="https://thrive.arizona.edu/news/use-procrastination-your-advantage-pomodoro-technique#:~:text=The%20Pomodoro%20Technique%20was%20developed,minutes%20and%20take%20a%20break.">About</a>
+
+    </body>
+    <script src="timer.js"></script>
+</html>
+
+
+
